@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Project</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <header>
+    <h1>✨ Interactive Web Page</h1>
+  </header>
+
+  <section class="carousel-section">
+  <h2>📝 Text Carousel</h2>
+  <p id="text-carousel" class="carousel-text">"The journey of a thousand miles begins with a single step."</p>
+  <div class="buttons">
+    <button onclick="prevText()">⬅️ Prev</button>
+    <button onclick="nextText()">Next ➡️</button>
+  </div>
+</section>
+
+
+  <section class="joke-section">
+    <h2>😂 Random Joke</h2>
+    <button onclick="getJoke()">Get Joke</button>
+    <p id="joke">Press the button for a joke!</p>
+  </section>
+
+  <footer>
+    <p>Made with ⚡ JavaScript</p>
+  </footer>
+
+  <script src="script1.js"></script>
+</body>
+</html>

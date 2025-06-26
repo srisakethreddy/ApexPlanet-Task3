@@ -1,0 +1,76 @@
+:root {
+  --bg-color: #f0f4f8;
+  --text-color: #333;
+  --card-bg: #fff;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+#toggleMode {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  font-size: 1.2rem;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    font-size: 1rem;
+  }
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Dark Mode Styles */
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #f0f0f0;
+  --card-bg: #2c2c2c;
+}
